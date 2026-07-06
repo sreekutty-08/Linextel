@@ -1,18 +1,6 @@
 import React from "react";
 
-/**
- * VoIP / Telecom — About Us Hero
- * Same system as the Contact Us header: base #0b1220, surface #101a30,
- * line rgba(148,163,196,.14), signal teal #2dd4bf, live amber #fbbf24,
- * text #eef2f9 / #8ea0c4. Space Grotesk (display), Inter (body),
- * IBM Plex Mono (data/labels). No navbar / footer — header section only.
- *
- * Right side: a glass "pillar" infographic — transparent, icon-led tabs
- * orbiting a central hub, connected by thin lines (different composition
- * from the Contact page's solid metric-bar card).
- * Bottom: a feature strip (icon + title + subtitle, divided) — same
- * pattern as Contact Us, reworded for company facts.
- */
+
 
 const PILLARS = [
   { icon: "compass", label: "Our Story", angle: -60 },
