@@ -8,10 +8,6 @@ import {
   Users,
   Droplet,
   ClipboardList,
-  Zap,
-  Anchor,
-  Wind,
-  Layers,
   PhoneCall,
   Wifi,
   Signal,
@@ -25,12 +21,6 @@ const stats = [
   { icon: Users, value: "98%", label: "CLIENT SATISFACTION" },
 ];
 
-const tabContent = [
-  { title: "BRIDGE", items: [{ icon: Building2, label: "Design" }, { icon: Layers, label: "Span" }, { icon: Anchor, label: "Steel" }, { icon: Wind, label: "Load" }] },
-  { title: "ROADS", items: [{ icon: ArrowRight, label: "Highways" }, { icon: Zap, label: "Tunnels" }, { icon: Globe2, label: "Urban" }, { icon: Layers, label: "Paving" }] },
-  { title: "WATER", items: [{ icon: Droplet, label: "Dams" }, { icon: Wind, label: "Flow" }, { icon: Building2, label: "Pipes" }, { icon: ClipboardList, label: "Env" }] },
-  { title: "PLANS", items: [{ icon: Users, label: "Consult" }, { icon: ClipboardList, label: "Audit" }, { icon: HardHat, label: "Survey" }, { icon: Layers, label: "Draft" }] },
-];
 
 const services = [
   {
@@ -69,7 +59,7 @@ const services = [
 const waveformHeights = [35, 60, 45, 80, 55, 90, 40, 70, 50, 85, 60, 30, 75, 45, 65, 40, 55, 80, 35, 60];
 
 export default function NexusEngineersHero() {
-  const [activeTab, setActiveTab] = useState(0);
+  
 
   // Live call timer for the VoIP widget
   const [seconds, setSeconds] = useState(742);
