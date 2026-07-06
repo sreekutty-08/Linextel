@@ -315,7 +315,7 @@ export default function TelecomFooter() {
               {socials.map(({ Icon, label }) => (
                 <a
                   key={label}
-                  href={url}
+                  href="#"
                   aria-label={label}
                   className="group flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-cyan-400/50 hover:text-cyan-300"
                 >
@@ -336,7 +336,7 @@ export default function TelecomFooter() {
                 {links.map((link) => (
                   <li key={link}>
                     <a
-                      href={url}
+                      href="#"
                       className="group inline-flex items-center gap-1 text-sm text-slate-400 transition-colors hover:text-cyan-300"
                     >
                       <ChevronRight className="h-3 w-3 text-slate-600 transition-transform group-hover:translate-x-0.5 group-hover:text-cyan-400" />
@@ -423,9 +423,9 @@ export default function TelecomFooter() {
             © {new Date().getFullYear()} Nexolink Communications Ltd. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
-            <a href={url} className="hover:text-slate-300">Privacy Policy</a>
-            <a href={url} className="hover:text-slate-300">Terms of Service</a>
-            <a href={url} className="hover:text-slate-300">Regulatory Filings</a>
+            <a href="#" className="hover:text-slate-300">Privacy Policy</a>
+            <a href="#" className="hover:text-slate-300">Terms of Service</a>
+            <a href="#" className="hover:text-slate-300">Regulatory Filings</a>
             <span className="footer-mono flex items-center gap-1 text-slate-600">
               <Wifi className="h-3 w-3" /> Uptime 99.98%
             </span>

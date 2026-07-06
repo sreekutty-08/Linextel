@@ -8,6 +8,7 @@ import {
   Users,
   Droplet,
   ClipboardList,
+  
   PhoneCall,
   Wifi,
   Signal,
@@ -20,6 +21,7 @@ const stats = [
   { icon: Building2, value: "250+", label: "MAJOR PROJECTS DELIVERED" },
   { icon: Users, value: "98%", label: "CLIENT SATISFACTION" },
 ];
+
 
 
 const services = [
