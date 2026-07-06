@@ -6,7 +6,6 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import {
- 
   Wifi,
   Globe2,
   Radio,
@@ -19,14 +18,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-/**
- * TelecomFooter
- * Signature element: a canvas-based "signal mesh" — nodes that pulse like
- * cell towers, connected by lines that occasionally send a traveling
- * packet of light, visualizing a live data network rather than a
- * generic starfield. Recolored to the brand navy/cyan palette, with the
- * mesh tuned to be more visibly active.
- */
+
 
 const NODE_COUNT = 50;
 const CONNECT_DIST = 170;
@@ -312,17 +304,20 @@ export default function TelecomFooter() {
             </div>
 
             <div className="mt-6 flex items-center gap-3">
-              {socials.map(({ Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="group flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-cyan-400/50 hover:text-cyan-300"
-                >
-                  <Icon className="h-4 w-4 transition-transform group-hover:scale-110" />
-                </a>
-              ))}
-            </div>
+  {socials.map(({ Icon, label }) => (
+    <button
+      key={label}
+      type="button"
+      aria-label={label}
+      onClick={() => {
+        /* Handle your click logic here */
+      }}
+      className="group flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-cyan-400/50 hover:text-cyan-300"
+    >
+      <Icon className="h-4 w-4 transition-transform group-hover:scale-110" />
+    </button>
+  ))}
+</div>
           </div>
 
           {/* Link groups */}
@@ -333,18 +328,21 @@ export default function TelecomFooter() {
                 <span className="footer-heading">{title}</span>
               </div>
               <ul className="mt-4 space-y-3">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="group inline-flex items-center gap-1 text-sm text-slate-400 transition-colors hover:text-cyan-300"
-                    >
-                      <ChevronRight className="h-3 w-3 text-slate-600 transition-transform group-hover:translate-x-0.5 group-hover:text-cyan-400" />
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+  {links.map((link) => (
+    <li key={link}>
+      <button
+        type="button"
+        onClick={() => {
+          /* Add your navigation logic here, e.g., navigate(link) */
+        }}
+        className="group inline-flex items-center gap-1 text-sm text-slate-400 transition-colors hover:text-cyan-300 w-full text-left"
+      >
+        <ChevronRight className="h-3 w-3 text-slate-600 transition-transform group-hover:translate-x-0.5 group-hover:text-cyan-400" />
+        {link}
+      </button>
+    </li>
+  ))}
+</ul>
             </div>
           ))}
 
@@ -423,13 +421,15 @@ export default function TelecomFooter() {
             © {new Date().getFullYear()} Nexolink Communications Ltd. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
-            <a href="#" className="hover:text-slate-300">Privacy Policy</a>
-            <a href="#" className="hover:text-slate-300">Terms of Service</a>
-            <a href="#" className="hover:text-slate-300">Regulatory Filings</a>
-            <span className="footer-mono flex items-center gap-1 text-slate-600">
-              <Wifi className="h-3 w-3" /> Uptime 99.98%
-            </span>
-          </div>
+  {/* Replace '#' with actual paths like '/privacy', '/terms', etc. */}
+  <a href="/privacy-policy" className="hover:text-slate-300">Privacy Policy</a>
+  <a href="/terms-of-service" className="hover:text-slate-300">Terms of Service</a>
+  <a href="/regulatory-filings" className="hover:text-slate-300">Regulatory Filings</a>
+  
+  <span className="footer-mono flex items-center gap-1 text-slate-600">
+    <Wifi className="h-3 w-3" /> Uptime 99.98%
+  </span>
+</div>
         </div>
       </div>
     </footer>
