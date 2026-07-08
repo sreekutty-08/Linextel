@@ -1,5 +1,6 @@
 import React from "react";
 import { BarChart3, Users, Trophy, Globe2 } from "lucide-react";
+import SupportTeam from "../../Assets/Images/a9bbb559ef04cfe934b0049c2b9ac09c.jpg";
 
 
 
@@ -22,11 +23,11 @@ export default function WhoWeAre() {
 
             {/* Bottom / larger image */}
             <div className="relative rounded-xl overflow-hidden  mt-16 ml-10">
-              <img
-                src="https://i.pinimg.com/1200x/a9/bb/b5/a9bbb559ef04cfe934b0049c2b9ac09c.jpg"
-                alt="Support team collaborating"
-                className="w-[550px] h-[540px] object-cover"
-              />
+             <img
+  src={SupportTeam}
+  alt="Support team collaborating"
+  className="w-[550px] h-[540px] object-cover"
+/>
             </div>
 
             {/* Top-right smaller image */}

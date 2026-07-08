@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from "react";
+import Servicesheader from "../../Assets/Images/photo-1497366754035-f200968a6e72.avif";
 import {
   ArrowRight,
   Play,
-  HardHat,
   Globe2,
-  Building2,
   Users,
-  Droplet,
   ClipboardList,
-  
   PhoneCall,
   Wifi,
   Signal,
@@ -16,51 +13,51 @@ import {
 
 // DATA
 const stats = [
-  { icon: HardHat, value: "18+", label: "YEARS OF EXCELLENCE" },
-  { icon: Globe2, value: "32+", label: "COUNTRIES SERVED" },
-  { icon: Building2, value: "250+", label: "MAJOR PROJECTS DELIVERED" },
-  { icon: Users, value: "98%", label: "CLIENT SATISFACTION" },
+  { icon: PhoneCall, value: "10M+", label: "CALLS CONNECTED MONTHLY" },
+  { icon: Globe2, value: "120+", label: "COUNTRIES SERVED" },
+  { icon: Users, value: "10K+", label: "BUSINESSES POWERED" },
+  { icon: Signal, value: "99.99%", label: "NETWORK UPTIME" },
 ];
 
 
 
 const services = [
   {
-    icon: Building2,
-    title: "BRIDGE ENGINEERING",
-    desc: "Design & construction of long-span and signature bridges.",
+    icon: PhoneCall,
+    title: "CLOUD VOIP SYSTEMS",
+    desc: "Reliable cloud-based voice systems built for modern business communication.",
   },
   {
-    icon: ArrowRight,
-    title: "TRANSPORTATION INFRASTRUCTURE",
-    desc: "Highways, expressways, tunnels, and urban mobility solutions.",
+    icon: Globe2,
+    title: "GLOBAL NUMBER PROVISIONING",
+    desc: "Local and toll-free numbers activated in minutes across 120+ countries.",
   },
   {
-    icon: Building2,
-    title: "STRUCTURAL ENGINEERING",
-    desc: "Safe, efficient, and innovative structural design services.",
+    icon: Wifi,
+    title: "UNIFIED COMMUNICATIONS",
+    desc: "Voice, video, and messaging unified into a single connected platform.",
   },
   {
-    icon: Droplet,
-    title: "WATER & ENVIRONMENT",
-    desc: "Sustainable water systems, dams, and environmental works.",
+    icon: Signal,
+    title: "SIP TRUNKING & NETWORK",
+    desc: "Secure, carrier-grade SIP trunks for uninterrupted call quality.",
   },
   {
     icon: ClipboardList,
-    title: "PROJECT MANAGEMENT",
-    desc: "End-to-end project planning, execution, and monitoring.",
+    title: "ACCOUNT MANAGEMENT",
+    desc: "Dedicated onboarding and ongoing account support for every client.",
   },
   {
     icon: Users,
-    title: "CONSULTING & PLANNING",
-    desc: "Feasibility studies, surveying, and technical advisory.",
+    title: "CONSULTING & SUPPORT",
+    desc: "Expert guidance to help you design the right communication setup.",
   },
 ];
 
 // Fixed-height set for the waveform bars so the animation reads as a real voice trace
 const waveformHeights = [35, 60, 45, 80, 55, 90, 40, 70, 50, 85, 60, 30, 75, 45, 65, 40, 55, 80, 35, 60];
 
-export default function NexusEngineersHero() {
+export default function LinxtelHero() {
   
 
   // Live call timer for the VoIP widget
@@ -79,9 +76,9 @@ export default function NexusEngineersHero() {
       {/* HERO */}
       <div
         className="relative w-full min-h-screen flex items-center bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1920&auto=format&fit=crop')",
+       
+               style={{
+                 backgroundImage: `url(${Servicesheader})`,
         }}
       >
         {/* shadow gradient overlays above the background image */}
@@ -89,40 +86,39 @@ export default function NexusEngineersHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1220] via-transparent to-[#0b1220]/40" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 w-full flex flex-col lg:flex-row items-center gap-10 relative z-10 ml-[60px]">
-         <div className="max-w-xl lg:-ml-10">
-  <p className="text-teal-400 text-xs md:text-sm font-default tracking-widest mb-4">
-    CONNECTING BUSINESSES.{" "}
-    <span className="text-white font-default">
-      POWERING GLOBAL COMMUNICATION.
-    </span>
-  </p>
+          <div className="max-w-xl lg:-ml-10">
+            <p className="text-teal-400 text-xs md:text-sm font-default tracking-widest mb-4">
+              CONNECTING BUSINESSES.{" "}
+              <span className="text-white font-default">
+                POWERING CONVERSATIONS.
+              </span>
+            </p>
 
-  <h1 className="text-4xl md:text-5xl font-default text-white leading-tight mb-6">
-    Next-Generation
-    <br />
-    <span className="text-teal-400">VoIP</span> Solutions
-  </h1>
+            <h1 className="text-4xl md:text-5xl font-default text-white leading-tight mb-6">
+              Powering
+              <br />
+              <span className="text-teal-400">Seamless</span> Connections
+            </h1>
 
-  <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-md">
-    <strong>Linxtel Ltd</strong> delivers enterprise-grade VoIP, SIP Trunking,
-    Wholesale Voice, DID Numbers, Cloud PBX, and complete Call Center
-    solutions. We empower businesses with secure, scalable, and
-    high-performance communication infrastructure backed by 24/7 expert
-    support.
-  </p>
+            <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+              Linxtel is a global provider of VoIP and cloud communication
+              solutions, delivering reliable, secure, and scalable voice
+              infrastructure for businesses. We connect more than calls we
+              connect teams, customers, and opportunity.
+            </p>
 
-  <div className="flex flex-wrap gap-4">
-    <button className="flex items-center gap-2 bg-teal-400 hover:bg-teal-300 transition-colors text-slate-900 font-bold text-sm px-6 py-3.5 rounded-sm">
-      EXPLORE SERVICES
-      <ArrowRight size={16} strokeWidth={3} />
-    </button>
+            <div className="flex flex-wrap gap-4">
+              <button className="flex items-center gap-2 bg-teal-400 hover:bg-teal-300 transition-colors text-slate-900 font-bold text-sm px-6 py-3.5 rounded-sm">
+                OUR SERVICES
+                <ArrowRight size={16} strokeWidth={3} />
+              </button>
 
-    <button className="flex items-center gap-2 border border-white/40 hover:border-white transition-colors text-white font-semibold text-sm px-6 py-3.5 rounded-sm">
-      <Play size={16} fill="white" />
-      DISCOVER LINXTEL
-    </button>
-  </div>
-</div>
+              <button className="flex items-center gap-2 border border-white/40 hover:border-white transition-colors text-white font-semibold text-sm px-6 py-3.5 rounded-sm">
+                <Play size={16} fill="white" />
+                WATCH OUR STORY
+              </button>
+            </div>
+          </div>
 
           {/* VoIP Live Call Widget (replaces the tab panel) */}
           <div className="w-full ml-[380px] lg:w-[400px] bg-[#0f1b30]/80 p-6 rounded-md border border-white/10 backdrop-blur-sm relative overflow-hidden">
@@ -177,7 +173,7 @@ export default function NexusEngineersHero() {
               </div>
               <div>
                 <div className="text-white text-sm font-bold leading-tight">
-                  Site Office — Doha
+                  Regional Office — Doha
                 </div>
                 <div className="text-slate-400 text-xs mt-0.5">
                   VoIP · HD Voice · Encrypted
@@ -265,14 +261,14 @@ export default function NexusEngineersHero() {
             </p>
 
             <h2 className="text-white text-3xl font-extrabold leading-snug mb-4">
-              End-to-End Civil
+              End-to-End Business
               <br />
-              Engineering Solutions
+              Communication Solutions
             </h2>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              From concept to completion, we deliver intelligent,
-              sustainable, and cost-effective engineering solutions.
+              From setup to scale, we deliver reliable, secure, and
+              cost-effective VoIP and cloud communication solutions.
             </p>
 
             <button className="flex items-center gap-2 bg-teal-400 hover:bg-teal-300 transition-colors text-slate-900 font-bold text-xs px-5 py-3 rounded-sm">

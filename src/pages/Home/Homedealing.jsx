@@ -1,4 +1,5 @@
 import React from "react";
+import Homedealing from "../../Assets/Images/f29e4a3ee0caf4882f054155ac7ac2da.jpg";
 import { PhoneCall, Check, ArrowRight, Zap } from "lucide-react";
 
 export default function VoipContentWithAd() {
@@ -10,7 +11,7 @@ export default function VoipContentWithAd() {
           <div className="flex flex-col gap-6 md:pr-10">
             <div className="rounded-2xl overflow-hidden flex-1 min-h-[260px]">
               <img
-                src="https://i.pinimg.com/1200x/f2/9e/4a/f29e4a3ee0caf4882f054155ac7ac2da.jpg"
+                src={Homedealing}
                 alt="Team using VoIP calling platform"
                 className="w-full h-full object-cover"
               />

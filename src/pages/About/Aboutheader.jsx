@@ -1,4 +1,5 @@
 import React from "react";
+import Aboutheader from "../../Assets/Images/photo-1556761175-4b46a572b786.avif";
 
 
 
@@ -137,10 +138,9 @@ export default function AboutUsHeader() {
 
       {/* FULL-BLEED BACKGROUND IMAGE */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
-       style={{
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=2000&auto=format&fit=crop')",
+       className="absolute inset-0 bg-cover bg-center"
+         style={{
+           backgroundImage: `url(${Aboutheader})`,
 }}   />
       <div className="absolute inset-0 bg-[#0b1220]/80" />
 

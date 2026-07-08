@@ -1,4 +1,14 @@
 import React, { useState } from "react";
+import Bot1 from "../../Assets/Images/f9b9e10ba5260a6aa9fa6a341c366b27.jpg";
+import MessagesSquare1 from "../../Assets/Images/82a8570401135007081e6843cc78a63f.jpg";
+import Headset1 from "../../Assets/Images/c58ffe27a9a31db0859d7568f97f40a1.jpg";
+import BarChart4 from "../../Assets/Images/1a18ccc840020e086cd151dbf8076ffe.jpg";
+import ShieldCheck1 from "../../Assets/Images/384c6da4e5c3d6bdfcd64f9184485034.jpg";
+import TrendingUp1 from "../../Assets/Images/6447606c5e6465b2db6193ef6f39f176.jpg";
+import Tag1 from "../../Assets/Images/5b73ddb96e81d2afd90ec43cc89182f8.jpg";
+import Rocket1 from "../../Assets/Images/7bbbe32aaa8e0d388b0d03b0e0f19ae0.jpg";
+import Link3 from "../../Assets/Images/5ddf463a15359ec30e50c1f8eba82d9e.jpg";
+
 import {
   Bot,
   MessagesSquare,
@@ -99,7 +109,7 @@ function NetworkBackground() {
 const SERVICES = [
   {
     icon: Bot,
-    image: "https://i.pinimg.com/1200x/f9/b9/e1/f9b9e10ba5260a6aa9fa6a341c366b27.jpg",
+    image: Bot1,
     heading: "AI Automation Capabilities",
     description: "Bots that qualify leads and route calls automatically.",
     longDescription:
@@ -112,7 +122,7 @@ const SERVICES = [
   },
   {
     icon: MessagesSquare,
-    image: "https://i.pinimg.com/736x/82/a8/57/82a8570401135007081e6843cc78a63f.jpg",
+    image: MessagesSquare1,
     heading: "Omnichannel Support",
     description: "Voice, chat, and SMS unified in a single thread.",
     longDescription:
@@ -125,7 +135,7 @@ const SERVICES = [
   },
   {
     icon: Link2,
-    image: "https://i.pinimg.com/736x/5d/df/46/5ddf463a15359ec30e50c1f8eba82d9e.jpg",
+    image: Link3,
     heading: "CRM Integrations",
     description: "Synced in real time with the tools you already use.",
     longDescription:
@@ -138,7 +148,7 @@ const SERVICES = [
   },
   {
     icon: BarChart3,
-    image: "https://i.pinimg.com/736x/1a/18/cc/1a18ccc840020e086cd151dbf8076ffe.jpg",
+    image: BarChart4,
     heading: "Call Analytics",
     description: "Live dashboards on every conversation and agent.",
     longDescription:
@@ -151,7 +161,7 @@ const SERVICES = [
   },
   {
     icon: ShieldCheck,
-    image: "https://i.pinimg.com/736x/38/4c/6d/384c6da4e5c3d6bdfcd64f9184485034.jpg",
+    image:ShieldCheck1,
     heading: "Security & Compliance",
     description: "Encrypted calls, always compliant by default.",
     longDescription:
@@ -164,7 +174,7 @@ const SERVICES = [
   },
   {
     icon: TrendingUp,
-    image: "https://i.pinimg.com/736x/64/47/60/6447606c5e6465b2db6193ef6f39f176.jpg",
+    image: TrendingUp1,
     heading: "Scalability",
     description: "Infrastructure that grows with your call volume.",
     longDescription:
@@ -177,7 +187,7 @@ const SERVICES = [
   },
   {
     icon: Tag,
-    image: "https://i.pinimg.com/1200x/5b/73/dd/5b73ddb96e81d2afd90ec43cc89182f8.jpg",
+    image:Tag1,
     heading: "Pricing Model",
     description: "Transparent, usage-based, no hidden charges.",
     longDescription:
@@ -190,7 +200,7 @@ const SERVICES = [
   },
   {
     icon: Rocket,
-    image: "https://i.pinimg.com/736x/7b/bb/e3/7bbbe32aaa8e0d388b0d03b0e0f19ae0.jpg",
+    image:Rocket1,
     heading: "Ease of Deployment",
     description: "A full contact center running in hours.",
     longDescription:
@@ -203,7 +213,7 @@ const SERVICES = [
   },
   {
     icon: Headset,
-    image: "https://i.pinimg.com/1200x/c5/8f/fe/c58ffe27a9a31db0859d7568f97f40a1.jpg",
+    image:Headset1,
     heading: "Customer Support",
     description: "24/7 live support backed by a real SLA.",
     longDescription:

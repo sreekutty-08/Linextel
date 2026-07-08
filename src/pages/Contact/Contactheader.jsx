@@ -1,16 +1,7 @@
 import { useState, useEffect } from "react";
+import HeroBg from "../../Assets/Images/photo-1521737604893-d14cc237f11d.avif";
 
-/**
- * VoIP / Telecom — Contact Us Hero
- * Palette: base #0b1220, surface #101a30, line rgba(148,163,196,.14),
- *          signal teal #2dd4bf, live amber #fbbf24, text #eef2f9 / #8ea0c4
- * Type: Space Grotesk (display), Inter (body), IBM Plex Mono (data/labels)
- *
- * Right side: a five-step zigzag process spine — numbered hex nodes alternating
- * left/right down a dotted connector, each paired with an icon+arrow on one
- * side and a title/description card on the other (reference layout).
- * Bottom: unchanged continuous contact-channels dock.
- */
+
 
 const CHANNELS = [
   {
@@ -192,13 +183,12 @@ export default function ContactUsHeader() {
       `}</style>
 
       {/* FULL-BLEED BACKGROUND IMAGE — same treatment as the FAQ header */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2000&auto=format&fit=crop')",
-        }}
-      />
+     <div
+  className="absolute inset-0 bg-cover bg-center"
+  style={{
+    backgroundImage: `url(${HeroBg})`,
+  }}
+/>
       <div className="absolute inset-0 bg-[#0b1220]/80" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0b1220] via-[#0b1220]/75 to-[#0b1220]/40" />
       <div className="absolute inset-0 bg-gradient-to-t from-[#0b1220] via-transparent to-[#0b1220]/40" />

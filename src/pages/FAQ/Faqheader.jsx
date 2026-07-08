@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Faqheader from "../../Assets/Images/photo-1518770660439-4636190af475.avif";
 
 /**
  * VoIP / Telecom FAQ — full-bleed image hero + stats bar + category tabs
@@ -129,11 +130,11 @@ export default function VoipFaqHeader() {
       {/* FULL-BLEED BACKGROUND IMAGE */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-style={{
-  backgroundImage:
-    "url('https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2000&auto=format&fit=crop')",
-}}
-      />
+        style={{
+          backgroundImage: `url(${Faqheader})`,
+        }}
+      />    
+
       {/* dark navy wash + shadow so text/cards read on top of the photo */}
       <div className="absolute inset-0 bg-[#0b1220]/80" />
       <div className="absolute inset-0 bg-gradient-to-r from-[#0b1220] via-[#0b1220]/70 to-[#0b1220]/30" />

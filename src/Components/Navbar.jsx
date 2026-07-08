@@ -37,7 +37,7 @@ const Navbar = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-white shadow-[0_8px_30px_-12px_rgba(0,0,0,0.1)]"
+          ? "bg-white "
           : "bg-transparent"
       }`}
     >

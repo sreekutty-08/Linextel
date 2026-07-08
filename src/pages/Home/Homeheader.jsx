@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Homeheader from "../../Assets/Images/photo-1451187580459-43490279c0fa.avif";
 
 /**
  * VoIP / Telecom — Home Hero
@@ -88,10 +89,9 @@ export default function HomeHeader() {
 
       {/* FULL-BLEED BACKGROUND IMAGE */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=2000&auto=format&fit=crop')",
+         className="absolute inset-0 bg-cover bg-center"
+                        style={{
+                          backgroundImage: `url(${Homeheader})`,
         }}
       />
       <div className="absolute inset-0 bg-[#0b1220]/85" />

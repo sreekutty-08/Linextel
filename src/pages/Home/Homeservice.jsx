@@ -1,4 +1,5 @@
 import React from "react";
+import Homeservices from "../../Assets/Images/building-rocket-concept_52683-8282.jpg";
 import {
   Star,
   Globe,
@@ -51,7 +52,7 @@ export default function TelecomServiceIntro() {
           <div className="relative max-w-md mx-auto md:mx-0">
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="https://i.pinimg.com/736x/79/ec/f9/79ecf9718fac3025c67f1abaf64227a1.jpg"
+                src={Homeservices}
                 alt="Telecom support specialist"
                 className="w-full h-[580px] md:h-[580px] object-cover"
               />

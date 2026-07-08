@@ -1,4 +1,16 @@
 import React, { useState } from "react";
+import GrowthImage from "../../Assets/Images/7d06d38efaaa3c9c78a815d39adf71e9.jpg";
+import Developmentimage from "../../Assets/Images/05869ea753f92ee8c68308dbc0d68448.jpg";
+import Businessvisibility from "../../Assets/Images/47bf13e16e47f35d2718653991830f37.jpg";
+import Goingglobal from "../../Assets/Images/9f5ac48ebb287bbb7aca03841d78b8ae.jpg";
+import Resiliance from "../../Assets/Images/f62936f782f33ef46ed232acb9d54197.jpg";
+import Earningtrust from "../../Assets/Images/70a686f3e0a1490c6d7fa642eb96460e.jpg";
+import Beginningimage from "../../Assets/Images/31fd6bd21735fc0e0238e6d00595e967.jpg";
+import Groingnetwork from "../../Assets/Images/d1c8f5ab151830459ab4b06d3aa07e1d.jpg";
+import Ourpeople from "../../Assets/Images/7e22307b7f225a5338f594f78b5b9049.jpg";
+import Ourapporach from "../../Assets/Images/4e1feb9123d1322fe7b8585d26f4a737.jpg";
+import Ovision from "../../Assets/Images/2a82ae33e876a2c5ec34171f05296f8c.jpg";
+import Omission from "../../Assets/Images/cbeff9d518a4c9e6f5c2334f08bf1898.jpg";
 import {
   Target,
   Heart,
@@ -144,7 +156,7 @@ const VALUE_TABS = [
       "Infrastructure that scales with you",
       "No conversation left unanswered",
     ],
-    image: "https://i.pinimg.com/1200x/cb/ef/f9/cbeff9d518a4c9e6f5c2334f08bf1898.jpg",
+    image: Omission,
   },
   {
     icon: Heart,
@@ -157,7 +169,7 @@ const VALUE_TABS = [
       "One platform for every market",
       "Consistent quality, everywhere",
     ],
-    image: "https://i.pinimg.com/736x/2a/82/ae/2a82ae33e876a2c5ec34171f05296f8c.jpg",
+    image: Ovision,
   },
   {
     icon: Zap,
@@ -170,7 +182,7 @@ const VALUE_TABS = [
       "Continuous delivery, zero downtime",
       "Built with real support teams",
     ],
-    image: "https://i.pinimg.com/736x/4e/1f/eb/4e1feb9123d1322fe7b8585d26f4a737.jpg",
+    image: Ourapporach,
   },
   {
     icon: Users,
@@ -183,83 +195,91 @@ const VALUE_TABS = [
       "Direct feedback loop to product",
       "No outsourced first-line support",
     ],
-    image: "https://i.pinimg.com/1200x/7e/22/30/7e22307b7f225a5338f594f78b5b9049.jpg",
+    image: Ourpeople,
   },
 ];
 
 const JOURNEY = [
   {
-    year: "2018",
-    heading: "Founded In A Small Office",
+    phase: "Where It Began",
+    heading: "A Small Team With A Simple Idea",
     description: [
-      "Two engineers started routing calls for local businesses out of a single rented room, one client at a time. The first version of our platform ran on a single server, a secondhand router, and a lot of patience.",
-      "There was no roadmap beyond the next client call. Every feature we built that first year existed because a real customer asked for it — a habit that shaped how we still build today.",
+      "Linxtel started with a small team of engineers who believed that business communication shouldn't depend on brittle phone lines, expensive hardware, or a carrier contract locked in for years. The idea was simple: move voice onto the cloud and make it dependable enough for any business to trust from day one.",
+      "The earliest version of our platform was built to solve one problem at a time for the handful of local businesses who agreed to try it. There was no long roadmap, no polished pitch deck — just a working product, a lot of late nights, and a genuine curiosity about what businesses actually needed from their phone systems.",
+      "That early, close-up view of real customer problems shaped everything that came after. It's still the same instinct that guides how Linxtel builds today: solve the problem in front of you properly before chasing the next one.",
     ],
-    image: "https://i.pinimg.com/736x/84/17/68/8417680f5866342d5a194b9c6eb38d12.jpg",
+    image: Beginningimage,
   },
   {
-    year: "2019",
-    heading: "Signed Our First Enterprise Client",
+    phase: "Earning Trust",
+    heading: "Winning Our First Enterprise Customers",
     description: [
-      "A 200-seat logistics company took a chance on us over an established provider, betting that a smaller team would move faster on their edge cases. That bet forced us to rebuild our call-routing engine to handle real concurrency for the first time.",
-      "It was also the year we hired outside the founding team — three engineers and our first dedicated account manager — and started treating uptime as a promise rather than a hope.",
+      "As word spread, larger businesses began asking Linxtel to handle far more than a handful of lines. Winning the trust of enterprise customers meant proving that a cloud-based VoIP platform could match — and outperform — the legacy systems they were used to, without the downtime or the maintenance headaches.",
+      "That period pushed the engineering team to rebuild core parts of the call-routing engine so it could handle real concurrency, multiple departments, and the kind of call volume enterprise clients expect as standard, not as a stretch goal.",
+      "It was also when Linxtel grew beyond its founding team for the first time, bringing in dedicated engineers and a support function built around one principle: uptime is a promise, not a best effort.",
     ],
-    image: "https://i.pinimg.com/1200x/70/a6/86/70a686f3e0a1490c6d7fa642eb96460e.jpg",
+    image: Earningtrust,
   },
   {
-    year: "2020",
-    heading: "Went Remote-First, Overnight",
+    phase: "Built For Resilience",
+    heading: "Proving The Platform Under Real Pressure",
     description: [
-      "When offices emptied out worldwide, call volume through our platform tripled in six weeks as businesses scrambled to keep answering their phones from kitchen tables and spare bedrooms. We shipped a browser-based softphone in seventeen days to keep up.",
-      "That sprint taught us more about resilience under real load than the previous two years combined, and it's the reason failover routing became a default, not an add-on.",
+      "There came a moment when businesses everywhere had to rethink how their teams communicated almost overnight, and call volume through Linxtel's network surged as companies scrambled to keep answering their customers from wherever their teams happened to be.",
+      "That surge became the ultimate stress test for the platform. Linxtel's engineers shipped a fully browser-based softphone in a matter of days, so any employee, anywhere, could pick up a business line with nothing more than a laptop and an internet connection.",
+      "The experience reshaped how resilience is designed into Linxtel's infrastructure. Failover routing, redundancy, and graceful degradation under load stopped being advanced features and became the default expectation for every product shipped afterward.",
     ],
-    image: "https://i.pinimg.com/1200x/f6/29/36/f62936f782f33ef46ed232acb9d54197.jpg",
+    image: Resiliance,
   },
   {
-    year: "2021",
-    heading: "Crossed One Million Calls",
+    phase: "A Growing Network",
+    heading: "Millions Of Conversations, One Platform",
     description: [
-      "Word of mouth carried us into new cities as our platform handled its first million connected calls in a single month. That milestone arrived quietly, buried in a dashboard, but it's the one the founding team still talks about most.",
-      "It was also the year we hired our first dedicated support team, freeing engineers from the phone queue for the first time — though most of them stayed on it anyway, out of habit.",
+      "Word of mouth carried Linxtel into new industries and new cities as businesses of every size — from lean startups to sprawling contact centers — started routing their calls, texts, and support conversations through the same cloud platform.",
+      "Crossing the threshold of millions of connected calls in a single month was a quiet milestone, buried in a dashboard rather than a press release, but it marked the moment Linxtel stopped feeling like a promising product and started feeling like critical infrastructure for the businesses depending on it.",
+      "It was also the point where a dedicated support team took shape, giving customers direct access to real people who understood the platform inside and out — a standard that still defines how Linxtel supports its customers.",
     ],
-    image: "https://i.pinimg.com/1200x/5a/bf/0d/5abf0daa68f43152dcfd10c48ebc48f5.jpg",
+    image:Groingnetwork,
   },
   {
-    year: "2022",
-    heading: "Expanded To 50 Countries",
+    phase: "Going Global",
+    heading: "Bringing Carrier-Grade Voice To The World",
     description: [
-      "We launched carrier partnerships across five continents in the same year, bringing local numbers and carrier-grade call quality to businesses everywhere, not just our home market.",
-      "Getting there meant navigating fifty different sets of telecom regulations, a process slower and messier than any of our engineers expected — but it meant a customer in Lagos and a customer in Lisbon now got the exact same call quality.",
+      "As Linxtel's customers expanded into new markets, they needed a communication partner that could follow them there. That meant building carrier partnerships across multiple continents to offer local numbers and consistent call quality, no matter where a business — or its customers — happened to be.",
+      "Getting there involved navigating dozens of different regulatory environments and telecom standards, a slower and far more detailed process than any engineer had anticipated. But it meant a customer in one part of the world and a customer on the other side of it now experienced the exact same call quality, reliability, and support.",
+      "That global footprint is now core to how Linxtel positions itself: not as a regional VoIP provider, but as a genuinely international cloud communications partner for growing businesses.",
     ],
-    image: "https://i.pinimg.com/1200x/9f/5a/c4/9f5ac48ebb287bbb7aca03841d78b8ae.jpg",
+    image: Goingglobal,
   },
   {
-    year: "2023",
-    heading: "Shipped Real-Time Call Analytics",
+    phase: "Giving Businesses Visibility",
+    heading: "Turning Call Data Into Real Insight",
     description: [
-      "Customers had been asking for visibility into their own call data for years, so we built dashboards that surface talk time, sentiment, and drop-off rates as calls happen, not the next morning in a CSV export.",
-      "Within months, teams were using the data to retrain agents and rewrite scripts mid-week instead of mid-quarter — analytics stopped being a report and became part of the daily workflow.",
+      "Customers had long asked for more visibility into their own communication data, so Linxtel built dashboards that surface talk time, sentiment, and drop-off rates as conversations happen — not buried in a spreadsheet the next morning.",
+      "Within months, support and sales teams using Linxtel were adjusting scripts, retraining agents, and catching problems mid-week instead of mid-quarter. Real-time analytics stopped being a nice-to-have report and became a working part of how teams managed their day.",
+      "That shift toward transparency shaped Linxtel's broader product philosophy: businesses shouldn't just be able to make calls through the platform, they should be able to understand them too.",
     ],
-    image: "https://i.pinimg.com/1200x/47/bf/13/47bf13e16e47f35d2718653991830f37.jpg",
+    image: Businessvisibility,
   },
   {
-    year: "2024",
-    heading: "Launched AI Call Automation",
+    phase: "Smarter By Design",
+    heading: "Bringing AI Into Everyday Conversations",
     description: [
-      "Our first AI-driven routing and IVR suite shipped after two years of development, cutting average wait times for our customers' callers by more than half in the first quarter alone.",
-      "We were careful about where automation stopped — every flow we shipped had an obvious, one-tap way to reach a human, because the goal was shorter queues, not fewer people answering the phone.",
+      "After years of development, Linxtel introduced its first AI-driven call routing and IVR suite, designed to cut down the time customers spent waiting to reach the right person, department, or answer.",
+      "Average wait times for businesses using the new automation dropped noticeably within the first few months, but the team was deliberate about where automation should stop. Every automated flow was built with a clear, one-tap path to a real human, because the goal was always shorter queues — never fewer people picking up the phone.",
+      "That balance between automation and human support remains central to how Linxtel designs new features: technology should remove friction, not remove people from the conversation.",
     ],
-    image: "https://i.pinimg.com/1200x/05/86/9e/05869ea753f92ee8c68308dbc0d68448.jpg",
+    image:Developmentimage,
   },
   {
-    year: "2026",
-    heading: "Powering 10,000+ Businesses",
-    description: [
-      "Today our network carries millions of conversations a month for businesses of every size, from single-agent startups to enterprise contact centers running thousands of seats.",
-      "The office is a lot bigger than that first rented room, but the question we started with hasn't changed: does this make a conversation easier to have, or harder? Everything we ship still has to answer that first.",
-    ],
-    image: "https://i.pinimg.com/1200x/7d/06/d3/7d06d38efaaa3c9c78a815d39adf71e9.jpg",
-  },
+  phase: "Where We Are Today",
+  heading: "A Cloud Communications Partner For Every Stage Of Growth",
+  description: [
+    "Today, Linxtel's network carries a huge volume of voice, messaging, and support conversations every month for businesses of every size, from single-agent startups taking their very first customer call to enterprise contact centers running thousands of seats.",
+    "The platform has grown considerably since those first days of solving problems one client at a time, but the underlying question hasn't changed: does this make a conversation easier to have, or harder? Every feature Linxtel ships still has to answer that honestly.",
+    "As a trusted provider of high-quality VoIP and cloud communication solutions, Linxtel continues to focus on one goal above all—delivering seamless, dependable enterprise communication infrastructure that businesses can build on for years to come.",
+  ],
+  image: GrowthImage,
+},
 ];
 
 export default function AboutUsPage() {
@@ -274,8 +294,7 @@ export default function AboutUsPage() {
       <div
         className="fixed inset-0 -z-10"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(246,248,251,0.90) 0%, rgba(246,248,251,0.96) 100%)",
+          background:"white",
         }}
       />
 
@@ -480,9 +499,11 @@ export default function AboutUsPage() {
               From One Office To A Global Network
             </h2>
             <p className="text-slate-500 text-sm leading-relaxed">
-              Eight years, eight milestones, and a lot of calls in between —
-              here's how we got from a single rented room to a platform
-              carrying millions of conversations a month.
+              Linxtel is a trusted provider of high-quality VoIP and cloud
+              communication solutions for businesses and enterprises. Here's
+              how a small team building seamless enterprise communication
+              infrastructure grew into a platform carrying millions of
+              conversations a month.
             </p>
           </div>
 
@@ -497,20 +518,20 @@ export default function AboutUsPage() {
                   } items-center gap-10 md:gap-14`}
                 >
                   <div className="w-full md:w-1/2">
-                    <div className=" overflow-hidden ">
+                    <div className="rounded-2xl overflow-hidden">
                       <img
                         src={step.image}
                         alt={step.heading}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-80 md:h-[28rem] object-cover"
                       />
                     </div>
                   </div>
                   <div className="w-full md:w-1/2">
                     <span
-                      className="text-4xl font-bold block mb-3"
+                      className="text-sm font-semibold tracking-[0.2em] uppercase block mb-3"
                       style={{ color: "#0891b2" }}
                     >
-                      {step.year}
+                      {step.phase}
                     </span>
                     <h3 className="text-xl font-bold text-slate-900 mb-3 leading-snug">
                       {step.heading}

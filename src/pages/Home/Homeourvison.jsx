@@ -1,5 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import VoipTeamImage from "../../Assets/Images/c9ca739c2a304fb7774aa5e99a211fb6.jpg";
 
 export default function AboutUs() {
   return (
@@ -42,10 +43,10 @@ export default function AboutUs() {
           {/* Our Story image */}
           <div className="relative rounded-2xl overflow-hidden min-h-[420px]">
             <img
-              src="https://i.pinimg.com/736x/e2/33/b0/e233b0258caed1f01cc820ff3fb9751e.jpg"
-              alt="VoIP support team collaborating"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
+  src={VoipTeamImage}
+  alt="VoIP support team collaborating"
+  className="absolute inset-0 w-full h-full object-cover"
+/>
             <div
               className="absolute inset-0"
               style={{
