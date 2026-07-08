@@ -10,6 +10,7 @@ import FAQ from "./pages/FAQ/FAQ";
 
 import "./App.css";
 import Footer from "./Components/Footer";
+import Whatsapp from "./Components/Whatsapp";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
       </Routes>
+      <Whatsapp/>
       <Footer/>
     </BrowserRouter>
   );
