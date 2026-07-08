@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   MapPin,
   Phone,
@@ -137,17 +138,20 @@ const InfoRow = ({ icon: Icon, label, value }) => (
   </div>
 );
 
+// Each field now carries a `name` attribute — EmailJS's sendForm reads
+// values straight off each input's `name`, matching your EmailJS template
+// variables (e.g. {{user_name}}, {{user_email}}, {{message}}...).
 const FIELDS_ROW_1 = [
-  { label: "Your Name *", type: "text", placeholder: "Ex. John Doe" },
-  { label: "Email *", type: "email", placeholder: "example@gmail.com" },
+  { name: "user_name", label: "Your Name *", type: "text", placeholder: "Ex. John Doe" },
+  { name: "user_email", label: "Email *", type: "email", placeholder: "example@gmail.com" },
 ];
 const FIELDS_ROW_2 = [
-  { label: "Company Name", type: "text", placeholder: "Ex. Acme Corp" },
-  { label: "Contact Person", type: "text", placeholder: "Ex. Jane Smith" },
+  { name: "company_name", label: "Company Name", type: "text", placeholder: "Ex. Acme Corp" },
+  { name: "contact_person", label: "Contact Person", type: "text", placeholder: "Ex. Jane Smith" },
 ];
 const FIELDS_ROW_3 = [
-  { label: "Phone Number", type: "tel", placeholder: "Ex. +0123-456-789" },
-  { label: "Subject *", type: "text", placeholder: "Enter Subject" },
+  { name: "phone_number", label: "Phone Number", type: "tel", placeholder: "Ex. +0123-456-789" },
+  { name: "subject", label: "Subject *", type: "text", placeholder: "Enter Subject" },
 ];
 
 const SOCIALS = [
@@ -175,19 +179,21 @@ const FEATURES = [
   },
 ];
 
-const Field = ({ label, type, placeholder, textarea }) => (
+const Field = ({ name, label, type, placeholder, textarea }) => (
   <div className={textarea ? "flex-1 flex flex-col" : ""}>
     <label className="block text-xs font-semibold text-slate-600 mb-1.5">
       {label}
     </label>
     {textarea ? (
       <textarea
+        name={name}
         placeholder={placeholder}
         className="w-full p-3.5 bg-white border border-slate-200 rounded-lg outline-none flex-1 min-h-[120px] text-sm transition-shadow focus:ring-2"
         style={{ "--tw-ring-color": "#22d3ee" }}
       />
     ) : (
       <input
+        name={name}
         type={type}
         placeholder={placeholder}
         className="w-full p-3.5 bg-white border border-slate-200 rounded-lg outline-none text-sm transition-shadow focus:ring-2"
@@ -198,6 +204,34 @@ const Field = ({ label, type, placeholder, textarea }) => (
 );
 
 const ContactUs = () => {
+  // Ref attached to the <form> below — EmailJS's sendForm needs the actual
+  // form DOM node to read all named fields from.
+  const form = useRef(null);
+  const [sending, setSending] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (!form.current) return;
+
+    setSending(true);
+
+    // Replace these three placeholders with your real EmailJS values:
+    // Service ID, Template ID, and Public Key from your EmailJS dashboard.
+    emailjs
+      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY")
+      .then(
+        () => {
+          setSending(false);
+          alert("Message sent successfully!");
+          form.current.reset();
+        },
+        (error) => {
+          setSending(false);
+          alert("Failed to send: " + error.text);
+        }
+      );
+  };
+
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden">
       {/* Animated telecom network-map background */}
@@ -231,7 +265,11 @@ const ContactUs = () => {
 
           <div className="flex flex-col md:flex-row gap-8 items-stretch">
             {/* Form */}
-            <form className="flex-1 flex flex-col space-y-5 bg-white/90 backdrop-blur-sm border border-slate-100 rounded-2xl p-8 shadow-sm">
+            <form
+              ref={form}
+              onSubmit={sendEmail}
+              className="flex-1 flex flex-col space-y-5 bg-white/90 backdrop-blur-sm border border-slate-100 rounded-2xl p-8 shadow-sm"
+            >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 {FIELDS_ROW_1.map((f) => (
                   <Field key={f.label} {...f} />
@@ -247,14 +285,15 @@ const ContactUs = () => {
                   <Field key={f.label} {...f} />
                 ))}
               </div>
-              <Field label="Your Message *" placeholder="Enter here..." textarea />
+              <Field name="message" label="Your Message *" placeholder="Enter here..." textarea />
 
               <button
-                type="button"
-                className="inline-flex items-center gap-2 text-white font-semibold py-3.5 px-8 rounded-full self-start transition-transform hover:scale-[1.02]"
+                type="submit"
+                disabled={sending}
+                className="inline-flex items-center gap-2 text-white font-semibold py-3.5 px-8 rounded-full self-start transition-transform hover:scale-[1.02] disabled:opacity-60 disabled:hover:scale-100"
                 style={{ backgroundColor: "#101a30" }}
               >
-                Send Message
+                {sending ? "Sending..." : "Send Message"}
                 <ArrowRight size={16} />
               </button>
             </form>

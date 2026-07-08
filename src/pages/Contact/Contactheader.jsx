@@ -7,10 +7,10 @@ const CHANNELS = [
   {
     icon: "phone",
     label: "Call us",
-    value: "+1 (415) 555 0142",
+    value: "+91 9462719609",
     note: "Mon–Sat, 8am–10pm PST",
     title: "24/7 Phone Support",
-    subtitle: "+1 (415) 555 0142",
+    subtitle: "+919462719609",
   },
   {
     icon: "mail",
@@ -23,10 +23,10 @@ const CHANNELS = [
   {
     icon: "pin",
     label: "Visit office",
-    value: "455 Market St, San Francisco, CA",
+    value: " 71-75 Shelton Street, covent Garden, London, WC2H 9JQ united Kingdom",
     note: "Weekdays, by appointment",
     title: "Handpicked Offices",
-    subtitle: "455 Market St, San Francisco",
+    subtitle: "71-75 Shelton Street, covent Garden, London, WC2H 9JQ ",
   },
   {
     icon: "chat",
