@@ -172,7 +172,7 @@ style={{
 
               <p className="f-body mt-6 text-default sm:text-lg text-[#c3ceE2] leading-relaxed">
                 Everything about setting up numbers, routing calls, and keeping
-                your lines crystal clear — answered by the people who built the
+                your lines crystal clear answered by the people who built the
                 network, not a script.
               </p>
 

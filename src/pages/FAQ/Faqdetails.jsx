@@ -20,33 +20,34 @@ import { Headset, Check, ArrowRight, PhoneCall } from "lucide-react";
 
 const FAQS = [
   {
-    q: "How long does it take to set up Nexline?",
-    a: "Most teams are making calls within 10 minutes. Port your existing number or grab a new one, invite your team, and your softphone or desk phone is ready — no hardware shipping required for the cloud plan.",
+    q: "What is Wholesale VoIP, and how does it benefit my business?",
+    a: "Wholesale VoIP allows businesses or call centers to purchase voice termination services in bulk. Instead of paying standard retail rates per minute, you get access to high-volume, premium global routes at a fraction of the cost. This is ideal for businesses making thousands of concurrent calls daily who need to maintain pristine voice quality while scaling down expenses.",
   },
   {
-    q: "Can I keep my existing business phone number?",
-    a: "Yes. We handle number porting for local, toll-free, and international numbers. Porting typically completes in 3–10 business days and your old line stays active until the switch is final.",
+    q: "Can you provide local and international phone numbers (DIDs)?",
+    a: "Yes. We offer Direct Inward Dialing (DID) services, which give you virtual phone numbers from countries and cities all over the world. Whether your team is located in one country but needs local presence numbers in the US, Europe, or Asia, we can provision those numbers quickly to help you build local trust with your clients.",
   },
   {
-    q: "Is there a contract or can I cancel anytime?",
-    a: "Plans are month-to-month by default, and you can cancel anytime from your dashboard. Annual plans are available at a discount if you'd rather lock in a lower rate.",
+    q: "What kind of dialer solutions do you deploy?",
+    a: "We specialize in deploying and configuring VICIdial, the world's most popular open-source contact center suite, alongside other predictive dialer systems. We host these dialers on high-performance cloud servers to ensure zero lag, high concurrency, and smart routing (predictive, power, or preview dialing) to maximize your agents' talk time.",
   },
   {
-    q: "Do you charge extra for international calls?",
-    a: "International minutes are billed per destination at published rates shown in your dashboard before you dial. Calls between Nexline users on any plan are always free, regardless of country.",
+    q: "Do your solutions integrate with our existing CRM?",
+    a: "Absolutely. Smooth workflows require your tools to talk to each other. We handle custom CRM integrations with popular platforms like Salesforce, HubSpot, Zoho, and custom webhook solutions. This allows your agents to see client data instantly through screen pops when a call connects and automatically logs call details without manual entry.",
   },
   {
-    q: "What happens if my internet goes down?",
-    a: "Calls automatically fail over to a backup route — forwarding to a mobile number or landline you set in advance — so you don't miss anything while your connection recovers.",
+    q: "What is a SIP Trunk, and do I need one?",
+    a: "Think of a SIP Trunk as a digital version of a traditional phone line. If you already have an on-premise PBX (phone system), a SIP Trunk connects your system to the internet, allowing you to make internet-based calls without replacing your existing infrastructure. It is a highly scalable and cost-effective way to modernize legacy phone systems.",
   },
   {
-    q: "Is my call data encrypted?",
-    a: "All calls and messages are encrypted in transit using SRTP and TLS. Call recordings at rest are encrypted with AES-256, and access is controlled by the permissions you set for your team.",
+    q: "How do your cloud servers ensure high uptime for call centers?",
+    a: "Our cloud infrastructure is built specifically to handle the heavy real-time workloads required by voice applications. We utilize redundant server architecture and strategically located data centers to ensure minimal latency, low jitter, and a 99.9% uptime guarantee, keeping your call center running around the clock.",
   },
   {
-    q: "Do you offer volume discounts for larger teams?",
-    a: "Yes. Plans scale with per-seat pricing that steps down automatically as your team grows, and enterprise accounts can request custom rates for high call volume.",
+    q: "What security measures do you have in place to protect our communication?",
+    a: "Security is a core pillar of our infrastructure. We implement robust encryption for voice traffic, secure SIP signaling, automated firewalls, and continuous fraud-detection monitoring to prevent unauthorized access and international toll fraud on your SIP trunks.",
   },
+ 
 ];
 
 // Nodes + connecting lines for the ambient "network map" background.

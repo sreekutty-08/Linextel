@@ -160,18 +160,18 @@ const SOCIALS = [
 const FEATURES = [
   {
     icon: Package,
-    title: "Reasonable Prices",
-    desc: "Transparent, usage-based plans with no hidden fees.",
+    title: "Premium VoIP Solutions",
+    desc: "Reliable SIP Trunks, Wholesale VoIP, and global voice connectivity with crystal-clear call quality.",
   },
   {
     icon: Timer,
-    title: "Timely Project Delivery",
-    desc: "Onboarded and running on schedule, every time.",
+    title: "Rapid Deployment",
+    desc: "Get your SIP Trunks, DIDs, and cloud telephony services activated within hours.",
   },
   {
     icon: HardHat,
-    title: "Professional Team",
-    desc: "Dedicated specialists behind every deployment.",
+    title: "24/7 VoIP Experts",
+    desc: "Experienced telecom engineers providing continuous monitoring, optimization, and technical support.",
   },
 ];
 
@@ -296,14 +296,14 @@ const ContactUs = () => {
                     label="Address"
                     value={
                       <>
-                        4517 Washington Ave.
+                        Linxtel Ltd . 71-75 Shelton Street, covent Garden, London, WC2H 9JQ
                         <br />
-                        Manchester, Kentucky 39495
+                        united Kingdom
                       </>
                     }
                   />
-                  <InfoRow icon={Phone} label="Phone" value="+0123-456-789" />
-                  <InfoRow icon={Mail} label="Email" value="example@gmail.com" />
+                  <InfoRow icon={Phone} label="Phone" value="+919462719609" />
+                  <InfoRow icon={Mail} label="Email" value="sales@linxtel.net" />
                   <InfoRow
                     icon={Clock}
                     label="Open Time"
@@ -340,32 +340,34 @@ const ContactUs = () => {
 
         {/* MAP — contained card, terrain view, with the location highlighted */}
         <div className="max-w-8xl mx-auto w-full px-6 md:px-10 pb-16">
-          <div className="bg-white/90 backdrop-blur-sm border border-orange-500 squared-2xl overflow-hidden shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-4 border-b border-orange-500">
-              <div className="flex items-center gap-2">
-                <MapPin size={16} style={{ color: "#0891b2" }} />
-                <span className="text-sm font-semibold text-orange-500">Find Us</span>
-              </div>
-              <span
-                className="text-xs font-medium px-3 py-1.5 rounded-full"
-                style={{ backgroundColor: "#e0f7fa", color: "#0891b2" }}
-              >
-                4517 Washington Ave, Manchester, KY 39495
-              </span>
-            </div>
-            <div className="h-[400px] sm:h-[400px]">
-              <iframe
-                title="Office location map"
-                src="https://www.google.com/maps?q=4517+Washington+Ave,+Manchester,+Kentucky+39495&t=p&z=15&output=embed"
-                width="100%"
-                height="100%"
-                style={{ border: 0, display: "block" }}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </div>
-        </div>
+  <div className="bg-white/90 backdrop-blur-sm border border-orange-500 squared-2xl overflow-hidden shadow-sm">
+    <div className="flex flex-wrap items-center justify-between gap-3 px-6 py-4 border-b border-orange-500">
+      <div className="flex items-center gap-2">
+        <MapPin size={16} style={{ color: "#0891b2" }} />
+        <span className="text-sm font-semibold text-orange-500">Find Us</span>
+      </div>
+
+      <span
+        className="text-xs font-medium px-3 py-1.5 rounded-full"
+        style={{ backgroundColor: "#e0f7fa", color: "#0891b2" }}
+      >
+        71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+      </span>
+    </div>
+
+    <div className="h-[400px] sm:h-[400px]">
+      <iframe
+        title="Office location map"
+        src="https://maps.google.com/maps?q=71-75%20Shelton%20Street%2C%20Covent%20Garden%2C%20London%20WC2H%209JQ%2C%20United%20Kingdom&z=16&output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0, display: "block" }}
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+  </div>
+</div>
 
         {/* Feature strip */}
         <div className="bg-white/90 backdrop-blur-sm py-16">

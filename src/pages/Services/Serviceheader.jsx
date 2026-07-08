@@ -89,39 +89,40 @@ export default function NexusEngineersHero() {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0b1220] via-transparent to-[#0b1220]/40" />
 
         <div className="max-w-7xl mx-auto px-6 md:px-10 py-14 w-full flex flex-col lg:flex-row items-center gap-10 relative z-10 ml-[60px]">
-          <div className="max-w-xl lg:-ml-10">
-            <p className="text-teal-400 text-xs md:text-sm font-default tracking-widest mb-4">
-              BUILDING CONNECTIONS.{" "}
-              <span className="text-white font-default">
-                ENGINEERING TOMORROW.
-              </span>
-            </p>
+         <div className="max-w-xl lg:-ml-10">
+  <p className="text-teal-400 text-xs md:text-sm font-default tracking-widest mb-4">
+    CONNECTING BUSINESSES.{" "}
+    <span className="text-white font-default">
+      POWERING GLOBAL COMMUNICATION.
+    </span>
+  </p>
 
-            <h1 className="text-4xl md:text-5xl font-default text-white leading-tight mb-6">
-              Engineering
-              <br />
-              <span className="text-teal-400">Stronger</span> Futures
-            </h1>
+  <h1 className="text-4xl md:text-5xl font-default text-white leading-tight mb-6">
+    Next-Generation
+    <br />
+    <span className="text-teal-400">VoIP</span> Solutions
+  </h1>
 
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-md">
-              NexusEngineers is a global civil engineering firm delivering
-              iconic infrastructure with precision, innovation, and
-              integrity. We build more than structures — we build lasting
-              impact.
-            </p>
+  <p className="text-slate-300 text-sm md:text-base leading-relaxed mb-8 max-w-md">
+    <strong>Linxtel Ltd</strong> delivers enterprise-grade VoIP, SIP Trunking,
+    Wholesale Voice, DID Numbers, Cloud PBX, and complete Call Center
+    solutions. We empower businesses with secure, scalable, and
+    high-performance communication infrastructure backed by 24/7 expert
+    support.
+  </p>
 
-            <div className="flex flex-wrap gap-4">
-              <button className="flex items-center gap-2 bg-teal-400 hover:bg-teal-300 transition-colors text-slate-900 font-bold text-sm px-6 py-3.5 rounded-sm">
-                OUR SERVICES
-                <ArrowRight size={16} strokeWidth={3} />
-              </button>
+  <div className="flex flex-wrap gap-4">
+    <button className="flex items-center gap-2 bg-teal-400 hover:bg-teal-300 transition-colors text-slate-900 font-bold text-sm px-6 py-3.5 rounded-sm">
+      EXPLORE SERVICES
+      <ArrowRight size={16} strokeWidth={3} />
+    </button>
 
-              <button className="flex items-center gap-2 border border-white/40 hover:border-white transition-colors text-white font-semibold text-sm px-6 py-3.5 rounded-sm">
-                <Play size={16} fill="white" />
-                WATCH OUR STORY
-              </button>
-            </div>
-          </div>
+    <button className="flex items-center gap-2 border border-white/40 hover:border-white transition-colors text-white font-semibold text-sm px-6 py-3.5 rounded-sm">
+      <Play size={16} fill="white" />
+      DISCOVER LINXTEL
+    </button>
+  </div>
+</div>
 
           {/* VoIP Live Call Widget (replaces the tab panel) */}
           <div className="w-full ml-[380px] lg:w-[400px] bg-[#0f1b30]/80 p-6 rounded-md border border-white/10 backdrop-blur-sm relative overflow-hidden">

@@ -202,28 +202,50 @@ function SignalBars() {
   );
 }
 
+// Main site navigation
+const quickLinks = [
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Services", href: "/services" },
+  { label: "Contact Us", href: "/contact-us" },
+  { label: "FAQ", href: "/faq" },
+];
+
+// VoIP service/feature groups
 const linkGroups = [
   {
-    title: "Network",
+    title: "Quick Links",
     icon: Radio,
-    links: ["5G Coverage Map", "Fiber Broadband", "Enterprise SD-WAN", "IoT Connectivity"],
+    links: quickLinks,
   },
   {
-    title: "Solutions",
+    title: "Platform Features",
     icon: Globe2,
-    links: ["Mobile Plans", "Business Bundles", "Cloud Voice (VoLTE)", "Roaming & Data Passes"],
+    links: [
+      { label: "AI Automation Capabilities", href: "/services#ai-automation" },
+      { label: "Omnichannel Support", href: "/services#omnichannel-support" },
+      { label: "CRM Integrations", href: "/services#crm-integrations" },
+      { label: "Call Analytics", href: "/services#call-analytics" },
+      { label: "Global Coverage", href: "/services#global-coverage" },
+    ],
   },
   {
-    title: "Support",
+    title: "Why Linxtel",
     icon: ShieldCheck,
-    links: ["Network Status", "Help Center", "SIM & eSIM Activation", "Report an Outage"],
+    links: [
+      { label: "Security & Compliance", href: "/services#security-compliance" },
+      { label: "Scalability", href: "/services#scalability" },
+      { label: "Pricing Model", href: "/services#pricing-model" },
+      { label: "Ease of Deployment", href: "/services#ease-of-deployment" },
+      { label: "Customer Support", href: "/services#customer-support" },
+    ],
   },
 ];
 
-const partnerships = [
-  { name: "National Regulatory Authority", ref: "MOA-2024-017", year: "2024" },
-  { name: "State Digital Infra Board", ref: "MOA-2023-092", year: "2023" },
-  { name: "Metro Smart City Initiative", ref: "MOA-2025-004", year: "2025" },
+const contactCards = [
+  { name: "Head Office", ref: "London, UK" },
+  { name: "Phone", ref: "+91 94627 19609" },
+  { name: "Email", ref: "sales@linxtel.net" },
 ];
 
 const socials = [
@@ -279,20 +301,20 @@ export default function TelecomFooter() {
       />
 
       <div className="relative mx-auto max-w-7xl px-6 pt-16 pb-8 sm:px-10">
-        {/* top: brand + link groups + MOA/newsletter */}
-        <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.3fr]">
+        {/* top: brand + link groups + contact/newsletter */}
+        <div className="grid grid-cols-1 gap-12 border-b border-white/10 pb-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr_1.3fr] lg:items-start">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2">
               <span className="footer-heading text-xl font-semibold tracking-tight text-white">
-                NEXOLINK
+                Linxtel
               </span>
               <SignalBars />
             </div>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
-              National-grade fiber and 5G infrastructure connecting cities,
-              carriers, and communities — built on public-private
-              agreements you can verify.
+              Cloud VoIP and AI-powered contact center solutionss marter
+              calling, omnichannel support, and enterprise-grade reliability
+              for teams of any size.
             </p>
 
             <div className="mt-6 flex items-center gap-2 text-xs text-emerald-400">
@@ -329,33 +351,30 @@ export default function TelecomFooter() {
               </div>
               <ul className="mt-4 space-y-3">
   {links.map((link) => (
-    <li key={link}>
-      <button
-        type="button"
-        onClick={() => {
-          /* Add your navigation logic here, e.g., navigate(link) */
-        }}
+    <li key={link.label}>
+      <a
+        href={link.href}
         className="group inline-flex items-center gap-1 text-sm text-slate-400 transition-colors hover:text-cyan-300 w-full text-left"
       >
         <ChevronRight className="h-3 w-3 text-slate-600 transition-transform group-hover:translate-x-0.5 group-hover:text-cyan-400" />
-        {link}
-      </button>
+        {link.label}
+      </a>
     </li>
   ))}
 </ul>
             </div>
           ))}
 
-          {/* MOA / Partnerships + Newsletter */}
+          {/* Contact details + Newsletter */}
           <div>
             <div className="flex items-center gap-2 text-sm font-semibold text-white">
               <FileText className="h-4 w-4 text-cyan-400" />
-              <span className="footer-heading">Strategic Partnerships (MOA)</span>
+              <span className="footer-heading">Get In Touch</span>
             </div>
             <ul className="mt-4 space-y-3">
-              {partnerships.map((p) => (
+              {contactCards.map((p) => (
                 <li
-                  key={p.ref}
+                  key={p.name}
                   className="rounded-lg border border-white/5 bg-white/[0.02] px-3 py-2 transition-colors hover:border-cyan-400/30"
                 >
                   <div className="flex items-center justify-between gap-2">
@@ -403,33 +422,44 @@ export default function TelecomFooter() {
         <div className="grid grid-cols-1 gap-6 border-b border-white/10 py-8 sm:grid-cols-3">
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <Phone className="h-4 w-4 text-cyan-400" />
-            1800-NEXOLINK (24/7)
+            +91 94627 19609
           </div>
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <Mail className="h-4 w-4 text-cyan-400" />
-            partnerships@nexolink.example
+            sales@linxtel.net
           </div>
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <MapPin className="h-4 w-4 text-cyan-400" />
-            Tower 3, Digital Infrastructure Park
+            71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
           </div>
         </div>
 
         {/* bottom bar */}
         <div className="flex flex-col items-center justify-between gap-4 pt-6 sm:flex-row">
           <p className="text-xs text-slate-500">
-            © {new Date().getFullYear()} Nexolink Communications Ltd. All rights reserved.
+            © {new Date().getFullYear()} Linxtel Ltd. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-slate-500">
-  {/* Replace '#' with actual paths like '/privacy', '/terms', etc. */}
   <a href="/privacy-policy" className="hover:text-slate-300">Privacy Policy</a>
   <a href="/terms-of-service" className="hover:text-slate-300">Terms of Service</a>
-  <a href="/regulatory-filings" className="hover:text-slate-300">Regulatory Filings</a>
-  
+  <a href="/faq" className="hover:text-slate-300">FAQ</a>
+
   <span className="footer-mono flex items-center gap-1 text-slate-600">
     <Wifi className="h-3 w-3" /> Uptime 99.98%
   </span>
 </div>
+        </div>
+
+        {/*
+          REQUIRED ATTRIBUTION — DO NOT REMOVE OR MODIFY
+          This credit line is hardcoded and intentionally not sourced from any
+          editable array/config in this file so it can't be accidentally
+          stripped out during future content edits.
+        */}
+        <div className="flex items-center justify-center pt-4">
+          <span className="footer-mono text-[11px] text-slate-500">
+            Powered by <span className="text-cyan-300/90">Codostack</span>
+          </span>
         </div>
       </div>
     </footer>

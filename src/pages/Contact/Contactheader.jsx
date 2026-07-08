@@ -235,7 +235,7 @@ export default function ContactUsHeader() {
 
               <p className="f-body mt-6 text-base sm:text-lg text-[#c3ceE2] leading-relaxed">
                 Whether it's a dropped call, a billing question, or setting up
-                a new line — our network engineers and support team pick up
+                a new line our network engineers and support team pick up
                 fast, on whichever channel works for you.
               </p>
 

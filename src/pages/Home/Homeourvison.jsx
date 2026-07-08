@@ -58,7 +58,7 @@ export default function AboutUs() {
                 Our Story
               </h3>
               <p className="text-slate-200 text-sm leading-relaxed">
-                CallNova, a leading VoIP provider, is reshaping business
+                Linxtel, a leading VoIP provider, is reshaping business
                 communication with AI-driven automation, carrier-grade
                 reliability, and connectivity built for teams worldwide.
               </p>

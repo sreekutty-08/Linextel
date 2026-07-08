@@ -1,84 +1,165 @@
 import React from "react";
 import {
-  Workflow,
-  Smartphone,
-  PhoneCall,
+  Award,
+  Network,
+  Volume2,
+  Zap,
+  Sliders,
+  CloudCog,
+  Tag,
+  Users,
+  LifeBuoy,
+  TrendingUp,
   Headset,
-  Cloud,
+  PhoneCall,
+  HeartPulse,
+  Landmark,
   ShieldCheck,
-  Globe,
-  MessageCircle,
-  Mic,
-  Radio,
-  PhoneForwarded,
-  BarChart3,
-  MessagesSquare,
-  Disc3,
+  Building2,
+  Plane,
+  ShoppingCart,
+  Code2,
+  GraduationCap,
 } from "lucide-react";
 
 const HERO_FEATURES = [
   {
-    icon: Workflow,
-    heading: "Seamless Integrations",
+    icon: LifeBuoy,
+    heading: "24×7 Technical Support",
     description:
-      "Connect with your CRM, helpdesk, or any platform using powerful APIs and webhooks.",
+      "Our technical team is available around the clock to keep your communication systems running smoothly.",
   },
   {
-    icon: Smartphone,
-    heading: "Web & Mobile Ready",
+    icon: TrendingUp,
+    heading: "Scalable Infrastructure",
     description:
-      "Utilize web and mobile SDKs to manage calls and reach customers anywhere.",
+      "Our infrastructure grows with your business, so you're always ready for the next stage of growth.",
   },
 ];
 
 const ICON_GRID = [
   { icon: PhoneCall, color: "#0891b2" },
   { icon: Headset, color: "#16a34a" },
-  { icon: Cloud, color: "#2563eb" },
+  { icon: CloudCog, color: "#2563eb" },
   { icon: ShieldCheck, color: "#059669" },
-  { icon: Globe, color: "#0ea5e9" },
-  { icon: MessageCircle, color: "#7c3aed" },
-  { icon: Mic, color: "#dc2626" },
-  { icon: Radio, color: "#ca8a04" },
-  { icon: PhoneForwarded, color: "#0d9488" },
+  { icon: Network, color: "#0ea5e9" },
+  { icon: Users, color: "#7c3aed" },
+  { icon: Volume2, color: "#dc2626" },
+  { icon: Award, color: "#ca8a04" },
+  { icon: Zap, color: "#0d9488" },
 ];
 
 const FEATURES = [
   {
-    icon: PhoneForwarded,
-    heading: "Smart Call Routing",
+    icon: Award,
+    heading: "Industry Expertise",
     description:
-      "Route calls in real time using skill, availability, or IVR conditions, cutting wait time and missed calls.",
+      "Years of hands-on experience helping businesses build communication systems that actually work.",
   },
   {
-    icon: BarChart3,
-    heading: "Real-Time Analytics",
+    icon: Network,
+    heading: "Reliable Network Infrastructure",
     description:
-      "Access live dashboards on talk time, sentiment, and agent performance across every line.",
+      "A resilient, carrier-grade network backbone that keeps you connected without interruption.",
+  },
+  {
+    icon: Volume2,
+    heading: "High Voice Quality",
+    description:
+      "Crystal-clear calls powered by optimized routing and quality-first network design.",
+  },
+  {
+    icon: Zap,
+    heading: "Fast Deployment",
+    description:
+      "Get up and running quickly with streamlined onboarding and setup processes.",
+  },
+  {
+    icon: Sliders,
+    heading: "Customized Solutions",
+    description:
+      "Communication solutions tailored to fit the exact needs of your business.",
+  },
+  {
+    icon: CloudCog,
+    heading: "Secure Cloud Environment",
+    description:
+      "Your data and calls are protected in a secure, compliant cloud environment.",
+  },
+  {
+    icon: Tag,
+    heading: "Competitive Pricing",
+    description:
+      "Transparent, competitive pricing designed to deliver strong value at every scale.",
+  },
+  {
+    icon: Users,
+    heading: "Experienced Technical Team",
+    description:
+      "A skilled technical team dedicated to supporting your systems and your success.",
+  },
+];
+
+const INDUSTRIES = [
+  {
+    icon: Headset,
+    heading: "BPO & Call Centers",
+    description:
+      "Communication tools built for high-volume, customer-facing call center operations.",
+  },
+  {
+    icon: PhoneCall,
+    heading: "Telecom Providers",
+    description:
+      "Robust voice infrastructure that helps telecom providers scale with confidence.",
+  },
+  {
+    icon: HeartPulse,
+    heading: "Healthcare",
+    description:
+      "Secure, reliable communication solutions built for healthcare providers.",
+  },
+  {
+    icon: Landmark,
+    heading: "Banking & Financial Services",
+    description:
+      "Compliant, secure communication systems for banking and financial institutions.",
   },
   {
     icon: ShieldCheck,
-    heading: "Secure SIP Trunking",
+    heading: "Insurance",
     description:
-      "Encrypted, carrier-grade SIP trunks keep every call private and compliant, without sacrificing call quality.",
+      "Dependable voice solutions that keep insurance teams connected with clients.",
   },
   {
-    icon: MessagesSquare,
-    heading: "Omnichannel Messaging",
+    icon: Building2,
+    heading: "Real Estate",
     description:
-      "Unify voice, SMS, and chat into a single thread so agents never lose context mid-conversation.",
+      "Communication tools that help real estate teams stay responsive to clients.",
   },
   {
-    icon: Disc3,
-    heading: "Auto Call Recording",
+    icon: Plane,
+    heading: "Travel & Hospitality",
     description:
-      "Every call is recorded and transcribed automatically for training, QA, and dispute resolution.",
+      "Reliable voice solutions for travel and hospitality businesses worldwide.",
   },
   {
-    icon: Globe,
-    heading: "Global Number Provisioning",
+    icon: ShoppingCart,
+    heading: "E-Commerce",
     description:
-      "Spin up local and toll-free numbers in over 100 countries in minutes, no carrier contracts required.",
+      "Scalable communication infrastructure to support growing e-commerce businesses.",
+  },
+  {
+    icon: Code2,
+    heading: "IT & Software Companies",
+    description:
+      "Flexible communication solutions built for fast-moving IT and software teams.",
+  },
+  {
+    icon: GraduationCap,
+    heading: "Education",
+    description:
+      "Communication solutions that support schools and educational institutions.",
   },
 ];
 
@@ -115,12 +196,12 @@ export default function WhyChooseUs() {
                 className="text-2xl md:text-3xl font-bold leading-snug mb-4"
                 style={{ color: "#0b1220" }}
               >
-                Reliable Voice Infrastructure Your Business Will Love
+                Why Businesses Trust Us
               </h2>
               <p className="text-sm leading-relaxed mb-8" style={{ color: "#33422f" }}>
-                From call routing to real-time analytics, confidently connect
-                every channel and tool you use to run and scale your
-                business.
+                We understand that communication is critical to business
+                success. Our solutions are built to deliver reliability,
+                scalability, and long-term performance.
               </p>
 
               <div className="grid grid-cols-2 gap-6">
@@ -168,27 +249,65 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-        {/* Feature grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 pt-10">
-          {FEATURES.map((feature) => {
-            const Icon = feature.icon;
-            return (
-              <div key={feature.heading}>
+        {/* Why Choose Our Services */}
+        <div className="pt-10">
+          <h3 className="text-white text-lg md:text-xl font-bold mb-8">
+            Why Choose Our Services
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10">
+            {FEATURES.map((feature) => {
+              const Icon = feature.icon;
+              return (
+                <div key={feature.heading}>
+                  <div
+                    className="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+                    style={{ backgroundColor: "#132030" }}
+                  >
+                    <Icon size={16} style={{ color: "#4ade80" }} />
+                  </div>
+                  <h4 className="text-white text-sm font-semibold mb-2">
+                    {feature.heading}
+                  </h4>
+                  <p className="text-slate-400 text-xs leading-relaxed max-w-xs">
+                    {feature.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Industries We Serve */}
+        <div className="pt-16">
+          <h3 className="text-white text-lg md:text-xl font-bold mb-2">
+            Industries We Serve
+          </h3>
+          <p className="text-slate-400 text-xs leading-relaxed mb-8 max-w-xl">
+            We provide communication solutions for businesses across multiple
+            industries.
+          </p>
+          <div className="flex flex-wrap gap-4">
+            {INDUSTRIES.map((feature) => {
+              const Icon = feature.icon;
+              return (
                 <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center mb-4"
+                  key={feature.heading}
+                  className="flex items-center gap-2.5 rounded-full pl-2.5 pr-5 py-2.5"
                   style={{ backgroundColor: "#132030" }}
                 >
-                  <Icon size={16} style={{ color: "#4ade80" }} />
+                  <div
+                    className="w-7 h-7 rounded-full flex items-center justify-center shrink-0"
+                    style={{ backgroundColor: "#0b1220" }}
+                  >
+                    <Icon size={14} style={{ color: "#4ade80" }} />
+                  </div>
+                  <span className="text-white text-xs font-medium whitespace-nowrap">
+                    {feature.heading}
+                  </span>
                 </div>
-                <h4 className="text-white text-sm font-semibold mb-2">
-                  {feature.heading}
-                </h4>
-                <p className="text-slate-400 text-xs leading-relaxed max-w-xs">
-                  {feature.description}
-                </p>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

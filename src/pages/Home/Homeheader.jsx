@@ -118,24 +118,21 @@ export default function HomeHeader() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-[#2dd4bf]" />
                 </span>
                 <span className="f-mono text-[11px] tracking-[0.25em] uppercase text-[#8ea0c4]">
-                  Nexline · Global VoIP Network
+                  Linxtel· VoIP & Call Center Solutions
                 </span>
               </div>
 
               <h1 className="f-display text-4xl sm:text-4xl lg:text-[2.5rem] leading-[1.06] font-default text-[#eef2f9]">
-                One number.
+               Reliable VoIP & 
                 <br />
-                Every country.
+                Call Center Solutions
                 <br />
-                <span className="text-[#2dd4bf]">Zero dropped calls.</span>
+                <span className="text-[#2dd4bf]"> for Modern Businesses</span>
               </h1>
 
-              <p className="f-body mt-6 text-base sm:text-lg text-[#c3ceE2] leading-relaxed">
-                Nexline routes every call over our own fiber backbone in 50+
-                countries, so your team sounds local wherever they're
-                calling from — and wherever they're calling to.
-              </p>
-
+          <p className="f-body mt-6 text-base sm:text-lg text-[#c3ceE2] leading-relaxed">
+  Empower your business with secure, scalable VoIP solutions. We provide Wholesale VoIP, DID Services, Cloud Infrastructure, Dialer Deployment, CRM Integration, and Call Center Solutions to keep your business connected and growing.
+</p>
               <div className="mt-9 flex flex-wrap items-center gap-4">
                 <button className="f-body rounded-lg bg-[#2dd4bf] text-[#062521] text-sm font-medium px-6 py-3.5 hover:bg-[#5ee4d4] transition-colors shadow-[0_10px_30px_-10px_rgba(45,212,191,0.6)]">
                   Start free trial
