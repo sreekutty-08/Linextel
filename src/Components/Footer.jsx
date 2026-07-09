@@ -430,7 +430,10 @@ export default function TelecomFooter() {
           </div>
           <div className="flex items-center gap-3 text-sm text-slate-400">
             <MapPin className="h-4 w-4 text-cyan-400" />
-            71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+            2ND FLOOR COLLEGE HOUSE 17 KING EDWARDS ROAD,
+RUISLIP,
+LONDON,
+UNITED KINGDOM HA4 7AE
           </div>
         </div>
 

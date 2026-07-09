@@ -26,7 +26,7 @@ const CHANNELS = [
     value: " 71-75 Shelton Street, covent Garden, London, WC2H 9JQ united Kingdom",
     note: "Weekdays, by appointment",
     title: "Handpicked Offices",
-    subtitle: "71-75 Shelton Street, covent Garden, London, WC2H 9JQ ",
+    subtitle: " LONDON, UNITED KINGDOM HA4 7AE",
   },
   {
     icon: "chat",

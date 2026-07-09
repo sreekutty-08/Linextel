@@ -335,9 +335,12 @@ const ContactUs = () => {
                     label="Address"
                     value={
                       <>
-                        Linxtel Ltd . 71-75 Shelton Street, covent Garden, London, WC2H 9JQ
+                        Linxtel Ltd . 2ND FLOOR COLLEGE HOUSE 17 KING EDWARDS ROAD,
+RUISLIP,
+LONDON,
+
                         <br />
-                        united Kingdom
+                       UNITED KINGDOM HA4 7AE
                       </>
                     }
                   />
@@ -390,7 +393,10 @@ const ContactUs = () => {
         className="text-xs font-medium px-3 py-1.5 rounded-full"
         style={{ backgroundColor: "#e0f7fa", color: "#0891b2" }}
       >
-        71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, United Kingdom
+        2ND FLOOR COLLEGE HOUSE 17 KING EDWARDS ROAD,
+RUISLIP,
+LONDON,
+UNITED KINGDOM HA4 7AE
       </span>
     </div>
 
