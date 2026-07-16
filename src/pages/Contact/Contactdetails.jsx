@@ -210,26 +210,33 @@ const ContactUs = () => {
   const [sending, setSending] = useState(false);
 
   const sendEmail = (e) => {
-    e.preventDefault();
-    if (!form.current) return;
+  e.preventDefault();
 
-    setSending(true);
+  if (!form.current) return;
 
-    // Replace these three placeholders with your real EmailJS values:
-    // Service ID, Template ID, and Public Key from your EmailJS dashboard.
-    emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form.current, "YOUR_PUBLIC_KEY")
-      .then(
-        () => {
-          setSending(false);
-          alert("Message sent successfully!");
-          form.current.reset();
-        },
-        (error) => {
-          setSending(false);
-          alert("Failed to send: " + error.text);
-        }
-      );
+  setSending(true);
+
+  emailjs
+    .sendForm(
+      "service_o3j62rd",
+      "template_olfmjti",
+      form.current,
+      "bBaPWeOswXLWwMPat"
+    )
+    .then(
+      (result) => {
+        console.log("SUCCESS!", result.text);
+        setSending(false);
+        alert("Message sent successfully!");
+        form.current.reset();
+      },
+      (error) => {
+        console.error("FAILED...", error);
+        setSending(false);
+        alert("Failed to send: " + error.text);
+      }
+    );
+
   };
 
   return (

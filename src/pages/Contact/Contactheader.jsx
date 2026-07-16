@@ -15,7 +15,7 @@ const CHANNELS = [
   {
     icon: "mail",
     label: "Email us",
-    value: "support@nexline.com",
+    value: "support@linxtel.net",
     note: "We reply within 24 hours",
     title: "Fast Email Replies",
     subtitle: "Reply within 24 hours",
